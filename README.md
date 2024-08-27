@@ -5,7 +5,7 @@
 Выполняется от имени администратора коммандой в powershell "powershell.exe -ExecutionPolicy Bypass -File "\\SMB Адресс расшаренного скрипта zabbix.ps1"".
 **Особенности:**
 - Внешний адресс нахождения скрипта в шаре `\\192.168.0.22\Obmen\TEMP\zabbix.ps1`
-- Внешнее нахождение клиента в шаре `$zabbixMsiPath = '\\192.168.0.22\Obmen\TEMP\zabbix_agent-7.0.3-windows-amd64-openssl.msi`.
+- Внешнее нахождение клиента в шаре `$zabbixMsiPath = '\\192.168.0.22\Obmen\TEMP\zabbix_agent-7.0.3-windows-amd64-openssl.msi'`.
 - Указание Адреса сервера `$zabbixServerIP = '192.168.100.75'` и `$zabbixServerActiveIP = '192.168.100.75'`.
 - Проверка на уже установленный клиент Zabbix и удаление ( Очень хорошо при обновлении на новые версии ).
 - Добавление открытия порта в  FireWall / Брандмауэр.
