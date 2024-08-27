@@ -1,4 +1,4 @@
-# Запуск коммандой
+# Запуск коммандой PowerShell от админа
 # powershell.exe -ExecutionPolicy Bypass -File "\\SMB Адресс расшаренного скриптаzabbix.ps1"
 
 
