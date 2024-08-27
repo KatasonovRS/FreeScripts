@@ -1,7 +1,8 @@
 # FreeScripts
 **Скрипты для автоматизации IT задач.**
 
-**ZabbixAgent.ps1** - Выполняется от имени администратора коммандой в powershell "powershell.exe -ExecutionPolicy Bypass -File "\\SMB Адресс расшаренного скрипта zabbix.ps1"".
+**ZabbixAgent.ps1** - Автоматическая установка клиента Zabbix для Windows.
+Выполняется от имени администратора коммандой в powershell "powershell.exe -ExecutionPolicy Bypass -File "\\SMB Адресс расшаренного скрипта zabbix.ps1"".
 **Особенности:**
 - Внешний адресс нахождения скрипта в шаре \\192.168.0.22\Obmen\TEMP\zabbix.ps1.
 - Внешнее нахождение клиента в шаре "$zabbixMsiPath = '\\192.168.0.22\Obmen\TEMP\zabbix_agent-7.0.3-windows-amd64-openssl.msi'".
