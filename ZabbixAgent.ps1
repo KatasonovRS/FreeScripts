@@ -11,10 +11,10 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 $zabbixMsiPath = '\\SMB Адрес к msi установщику агента'
 
 # Укажите IP-адрес вашего Zabbix-сервера
-$zabbixServerIP = 'IP of DNS Сервера Zabbix'
+$zabbixServerIP = 'IP or DNS Сервера Zabbix'
 
 # Укажите IP-адрес для параметра ServerActive
-$zabbixServerActiveIP = 'IP of DNS Сервера Zabbix'
+$zabbixServerActiveIP = 'IP or DNS Сервера Zabbix'
 
 # Проверка наличия файла MSI
 if (-Not (Test-Path $zabbixMsiPath)) {
