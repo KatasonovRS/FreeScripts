@@ -1,21 +1,15 @@
-# Запуск коммандой PowerShell от админа
-# Set-ExecutionPolicy Bypass -Scope Process
-# powershell.exe -ExecutionPolicy Bypass -File "\\SMB Адресс расшаренного скрипта zabbix.ps1"
+# Запуск коммандой
+# Set-ExecutionPolicy Bypass -Force ; powershell   -File "\\192.168.0.22\Obmen\TEMP\zabbix.ps1"
 
-
-
-
-# Установить политику выполнения скриптов
-Set-ExecutionPolicy Bypass -Scope Process -Force
 
 # Укажите путь к вашему MSI-файлу Zabbix
-$zabbixMsiPath = '\\SMB Адрес к msi установщику агента'
+$zabbixMsiPath = '\\192.168.0.22\Obmen\TEMP\zabbix_agent-7.0.3-windows-amd64-openssl.msi'
 
 # Укажите IP-адрес вашего Zabbix-сервера
-$zabbixServerIP = 'IP or DNS Сервера Zabbix'
+$zabbixServerIP = '192.168.100.75'
 
 # Укажите IP-адрес для параметра ServerActive
-$zabbixServerActiveIP = 'IP or DNS Сервера Zabbix'
+$zabbixServerActiveIP = '192.168.100.75'
 
 # Проверка наличия файла MSI
 if (-Not (Test-Path $zabbixMsiPath)) {
