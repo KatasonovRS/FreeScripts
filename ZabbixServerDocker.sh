@@ -1,6 +1,6 @@
 #!/bin/bash
 # Добавление скрипта в автозагрузку.
-# sudo bash -c '(crontab -l 2>/dev/null; echo "@reboot /home/it/ZabbixServer.sh") | crontab -'
+# sudo bash -c '(crontab -l 2>/dev/null; echo "@reboot /home/it/ZabbixServerDocker.sh") | crontab -'
 # Автоустановка всего необходимого
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get install cron htop mc nload screenfetch net-tools traceroute docker.io -y
 
